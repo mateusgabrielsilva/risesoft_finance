@@ -13,20 +13,22 @@ const LoginPage = async () => {
   }
 
   return (
-    <div className="grid h-full grid-cols-2">
+    <div className="grid h-full grid-cols-1 md:grid-cols-2">
       {/* Esquerda */}
-      <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-8">
+      <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-4 sm:p-8">
         <Image
           src="/logo.svg"
           width={173}
           height={39}
           alt="Logo Risesoft Finance"
-          className="mb-8"
+          className="mb-4 sm:mb-8"
         />
-        <h1 className="mb-3 text-4xl font-bold">Bem-vindo</h1>
-        <p className="mb-8 text-muted-foreground">
+        <h1 className="mb-2 text-3xl font-bold sm:mb-3 sm:text-4xl">
+          Bem-vindo
+        </h1>
+        <p className="mb-4 text-sm text-muted-foreground sm:mb-8 sm:text-base">
           O Risesoft Finance é uma plataforma de gestão financeira que utiliza
-          IA para monitorar suas movimentações, e oferecer insights
+          IA para monitorar suas movimentações e oferecer insights
           personalizados, facilitando o controle do seu orçamento.
         </p>
         <SignInButton>
@@ -36,7 +38,7 @@ const LoginPage = async () => {
         </SignInButton>
       </div>
       {/* Direita */}
-      <div className="relative h-full w-full">
+      <div className="relative hidden h-full w-full md:block">
         <Image
           src="/login.png"
           alt="Faça login"
