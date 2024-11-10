@@ -39,7 +39,8 @@ enum TransactionCategory {
   ENTERTAINMENT
   HEALTH
   UTILITY
-  SALARYEDUCATION
+  SALARY
+  EDUCATION
   OTHER
 }
 

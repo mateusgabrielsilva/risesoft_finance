@@ -18,7 +18,7 @@ const LoginPage = async () => {
       <div className="mx-auto flex h-full max-w-[550px] flex-col justify-center p-4 sm:p-8">
         <Image
           src="/logo.svg"
-          width={173}
+          width={255}
           height={39}
           alt="Logo Risesoft Finance"
           className="mb-4 sm:mb-8"
